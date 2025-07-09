@@ -7,41 +7,33 @@
   <meta name="keywords" content="Rishvin Reddy, B.Tech, Woxsen University, Web Developer, Cybersecurity, Portfolio" />
   <title>Rishvin Reddy</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Rishvin Reddy</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="hero">
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Profile" class="hero-pic">
+      <div class="hero-text">
+        <h1>Rishvin Reddy</h1>
+        <p>Software Developer & Cybersecurity Enthusiast</p>
+      </div>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 150"><path fill="#D50615" fill-opacity="1" d="M0,0L1440,150L1440,0L0,0Z"></path></svg>
   </header>
 
-  <section id="home">
-    <h2>Welcome!</h2>
-    <p>Hi, I’m Erolla Rishvin Reddy — a B.Tech student at Woxsen University, specializing in Blockchain, IoT, and Cybersecurity. I’m passionate about web development, AI, and tackling cybercrimes with innovative tech solutions.</p>
-    <img src="profile.jpg" alt="Profile photo coming soon" class="profile-pic" />
-  </section>
-
-  <section id="about">
+  <section id="about" class="scroll-fade">
     <h2>About Me</h2>
     <p>I’m Erolla Rishvin Reddy, currently pursuing a B.Tech in Blockchain, IoT, and Cybersecurity (BIC) at Woxsen University. I have a strong interest in web development, artificial intelligence, robotics, and especially cybersecurity — with a deep commitment to combating cybercrime and fraud.</p>
     <p>Over the years, I’ve worked on several impactful projects, including AgroHub (an AI-powered farming solution), an IoT-integrated Smart Waste Station, and a Biometric Voting System. I’ve also earned numerous certificates for my skills and contributions.</p>
     <p>My long-term goal is to become a skilled Software Developer and Cybersecurity Analyst, using technology to make systems smarter and safer for everyone.</p>
   </section>
 
-  <section id="achievements">
+  <section id="achievements" class="scroll-fade">
     <h2>Achievements</h2>
     <p>Certificates and awards will be showcased here. (Coming soon)</p>
   </section>
 
-  <section id="portfolio">
+  <section id="portfolio" class="scroll-fade">
     <h2>Portfolio</h2>
     <ul>
       <li><strong>AgroHub</strong> – An AI-powered farming assistant app</li>
@@ -51,19 +43,29 @@
     <p>Check out my work on <a href="https://github.com/RishvinReddy" target="_blank">GitHub</a>.</p>
   </section>
 
-  <section id="resume">
+  <section id="resume" class="scroll-fade">
     <h2>Resume</h2>
     <p>Download my resume: <a href="resume.pdf" download>Click here (Upload your PDF later)</a></p>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="scroll-fade">
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:rishvinreddy@gmail.com">rishvinreddy@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/RishvinReddy" target="_blank">github.com/RishvinReddy</a></p>
   </section>
 
-  <footer>
+  <footer class="scroll-fade">
     <p>&copy; 2025 Rishvin Reddy. All rights reserved.</p>
   </footer>
+
+  <script>
+  document.addEventListener('scroll',()=>{
+    document.querySelectorAll('.scroll-fade').forEach(el=>{
+      if(el.getBoundingClientRect().top < window.innerHeight - 100){
+        el.classList.add('visible');
+      }
+    });
+  });
+  </script>
 </body>
 </html>
