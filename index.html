@@ -1,20 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Rishvin Reddy – Personal Portfolio of a B.Tech student passionate about web development, AI, and cybersecurity." />
-  <meta name="keywords" content="Rishvin Reddy, Portfolio, Web Developer, Cybersecurity, GitHub, Projects" />
   <title>Rishvin Reddy</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<!-- Loading Animation -->
-<div id="loader"></div>
+<div style="background:#e91e63; color:white; padding:5px 10px; text-align:right; font-size: 0.9rem;">
+  📧 example@rishvin.com | 📞 09000012345
+</div>
 
-<!-- Sticky Navigation -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="#" class="nav-logo">Rishvin</a>
@@ -22,100 +21,39 @@
     <ul class="nav-menu">
       <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- Hero Section -->
 <section id="hero" class="hero">
-  <h1>Hi, I'm Rishvin Reddy</h1>
-  <p>Building secure systems with AI, Web, and IoT.</p>
+  <div class="hero-text">
+    <h1>Hi, I'm Rishvin Reddy</h1>
+    <h2>IoT & AI Enthusiast</h2>
+    <p>Building smart, secure systems using Web, AI, and Cybertech.</p>
+    <button class="cta-btn">Portfolio</button>
+  </div>
+  <div class="hero-img">
+    <img src="profile.jpg" alt="Rishvin Reddy" />
+  </div>
 </section>
 
-<!-- About Section -->
+<svg viewBox="0 0 1440 320"><path fill="#fff" d="M0,64L1440,160L1440,320L0,320Z"></path></svg>
+
 <section id="about" class="section">
   <h2>About Me</h2>
-  <p>I’m a B.Tech student at Woxsen University specializing in Blockchain, IoT, and Cybersecurity. Passionate about building smart and secure systems using Web Development, AI, and Cyber Intelligence.</p>
-</section>
-
-<!-- Portfolio Section -->
-<section id="portfolio" class="section">
-  <h2>Projects</h2>
-  <div class="portfolio-grid">
-    <div class="project-card">
-      <img src="https://via.placeholder.com/300x180" alt="AgroHub">
-      <h3>AgroHub</h3>
-      <p>AI-powered farming app with crop diagnosis, marketplace, and soil analysis.</p>
-      <p><strong>Tech:</strong> HTML, CSS, JS, AI API</p>
-      <a href="#">GitHub</a> | <a href="#">Live Demo</a>
-    </div>
-    <div class="project-card">
-      <img src="https://via.placeholder.com/300x180" alt="IoT Bin">
-      <h3>Smart Waste Station</h3>
-      <p>Arduino-based dual sensor bin for smart waste management.</p>
-      <p><strong>Tech:</strong> Arduino, Ultrasonic, Bluetooth</p>
-      <a href="#">GitHub</a>
-    </div>
+  <div style="margin: 30px auto;">
+    <img src="profile.jpg" style="width: 150px; border-radius: 50%;" alt="Rishvin Reddy">
   </div>
+  <p>I’m a B.Tech student at Woxsen University passionate about IoT, AI, and building future-ready secure systems.</p>
 </section>
 
-<!-- Achievements Section -->
-<section id="achievements" class="section">
-  <h2>Certificates</h2>
-  <div class="certificates-grid">
-    <div class="certificate-img">
-      <img src="https://via.placeholder.com/200x150" alt="Certificate">
-      <div class="cert-hover">View Certificate<br>100% – Fractal Analytics</div>
-    </div>
-    <div class="certificate-img">
-      <img src="https://via.placeholder.com/200x150" alt="Certificate">
-      <div class="cert-hover">View Certificate<br>94.16% – Alberta</div>
-    </div>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="section">
-  <h2>Contact Me</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea placeholder="Your Message" rows="4"></textarea>
-    <button type="submit">Send</button>
-  </form>
-  <div class="social-links">
-    <a href="#">GitHub</a> | <a href="#">LinkedIn</a> | <a href="#">Instagram</a>
-  </div>
-</section>
-
-<!-- Footer -->
 <footer>
   <p>&copy; 2025 Rishvin Reddy • <a href="#">Privacy</a></p>
 </footer>
 
-<!-- Scroll Progress -->
-<div id="progress-bar"></div>
-
 <script>
-  // Hamburger menu
   document.querySelector('.hamburger').onclick = () => {
     document.querySelector('.nav-menu').classList.toggle('active');
-  };
-
-  // Loader animation
-  window.addEventListener('load', () => {
-    document.getElementById('loader').style.display = 'none';
-  });
-
-  // Scroll progress bar
-  window.onscroll = () => {
-    let winScroll = document.documentElement.scrollTop;
-    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let scrolled = (winScroll / height) * 100;
-    document.getElementById("progress-bar").style.width = scrolled + "%";
   };
 </script>
 

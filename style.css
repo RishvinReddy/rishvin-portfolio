@@ -3,6 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #fff;
 }
 #loader {
   position: fixed;
@@ -53,86 +54,69 @@ body {
   }
 }
 .hero {
-  background: #222;
+  background: #111;
   color: white;
-  text-align: center;
-  padding: 80px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 80px 10%;
+}
+.hero-text {
+  flex: 1;
+  max-width: 500px;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #e91e63;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.hero-text .cta-btn {
+  background: #e91e63;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.hero-img {
+  flex: 1;
+  max-width: 400px;
+}
+.hero-img img {
+  width: 100%;
+  border-radius: 8px;
 }
 .section {
-  padding: 40px 20px;
+  padding: 60px 20px;
   max-width: 900px;
   margin: auto;
 }
-.portfolio-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.project-card {
-  background: #f4f4f4;
-  padding: 15px;
-  border-radius: 8px;
-  width: 300px;
-}
-.certificates-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.certificate-img {
-  position: relative;
-}
-.certificate-img img {
-  width: 200px;
-  border-radius: 8px;
-}
-.cert-hover {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0,0,0,0.7);
-  color: white;
-  width: 100%;
+#about {
+  background: white;
   text-align: center;
-  padding: 10px;
-  opacity: 0;
-  transition: opacity 0.3s;
 }
-.certificate-img:hover .cert-hover {
-  opacity: 1;
+#about h2 {
+  color: #e91e63;
+  font-size: 2rem;
 }
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-form input, form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-form button {
-  padding: 10px;
-  background: #111;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-.social-links a {
-  margin: 0 10px;
-  text-decoration: none;
+#about p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1rem;
 }
 footer {
   background: #111;
   color: white;
   text-align: center;
   padding: 20px;
-}
-#progress-bar {
-  height: 4px;
-  background: #00d4ff;
-  width: 0%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10000;
 }
