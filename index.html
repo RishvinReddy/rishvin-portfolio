@@ -4,68 +4,120 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Rishvin Reddy – Personal Portfolio of a B.Tech student passionate about web development, AI, and cybersecurity." />
-  <meta name="keywords" content="Rishvin Reddy, B.Tech, Woxsen University, Web Developer, Cybersecurity, Portfolio" />
+  <meta name="keywords" content="Rishvin Reddy, Portfolio, Web Developer, Cybersecurity, GitHub, Projects" />
   <title>Rishvin Reddy</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <img src="profile.jpg" alt="Profile" class="hero-pic">
-      <div class="hero-text">
-        <h1>Rishvin Reddy</h1>
-        <p>Software Developer & Cybersecurity Enthusiast</p>
-      </div>
-    </div>
-    <svg class="hero-wave" viewBox="0 0 1440 150"><path fill="#D50615" fill-opacity="1" d="M0,0L1440,150L1440,0L0,0Z"></path></svg>
-  </header>
 
-  <section id="about" class="scroll-fade">
-    <h2>About Me</h2>
-    <p>I’m Erolla Rishvin Reddy, currently pursuing a B.Tech in Blockchain, IoT, and Cybersecurity (BIC) at Woxsen University. I have a strong interest in web development, artificial intelligence, robotics, and especially cybersecurity — with a deep commitment to combating cybercrime and fraud.</p>
-    <p>Over the years, I’ve worked on several impactful projects, including AgroHub (an AI-powered farming solution), an IoT-integrated Smart Waste Station, and a Biometric Voting System. I’ve also earned numerous certificates for my skills and contributions.</p>
-    <p>My long-term goal is to become a skilled Software Developer and Cybersecurity Analyst, using technology to make systems smarter and safer for everyone.</p>
-  </section>
+<!-- Loading Animation -->
+<div id="loader"></div>
 
-  <section id="achievements" class="scroll-fade">
-    <h2>Achievements</h2>
-    <p>Certificates and awards will be showcased here. (Coming soon)</p>
-  </section>
-
-  <section id="portfolio" class="scroll-fade">
-    <h2>Portfolio</h2>
-    <ul>
-      <li><strong>AgroHub</strong> – An AI-powered farming assistant app</li>
-      <li><strong>IoT Smart Waste Station</strong> – Arduino-based smart bin system</li>
-      <li><strong>Biometric Voting System</strong> – A secure voting mechanism using biometrics</li>
+<!-- Sticky Navigation -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo">Rishvin</a>
+    <div class="hamburger">&#9776;</div>
+    <ul class="nav-menu">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    <p>Check out my work on <a href="https://github.com/RishvinReddy" target="_blank">GitHub</a>.</p>
-  </section>
+  </div>
+</nav>
 
-  <section id="resume" class="scroll-fade">
-    <h2>Resume</h2>
-    <p>Download my resume: <a href="resume.pdf" download>Click here (Upload your PDF later)</a></p>
-  </section>
+<!-- Hero Section -->
+<section id="hero" class="hero">
+  <h1>Hi, I'm Rishvin Reddy</h1>
+  <p>Building secure systems with AI, Web, and IoT.</p>
+</section>
 
-  <section id="contact" class="scroll-fade">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:rishvinreddy@gmail.com">rishvinreddy@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/RishvinReddy" target="_blank">github.com/RishvinReddy</a></p>
-  </section>
+<!-- About Section -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>I’m a B.Tech student at Woxsen University specializing in Blockchain, IoT, and Cybersecurity. Passionate about building smart and secure systems using Web Development, AI, and Cyber Intelligence.</p>
+</section>
 
-  <footer class="scroll-fade">
-    <p>&copy; 2025 Rishvin Reddy. All rights reserved.</p>
-  </footer>
+<!-- Portfolio Section -->
+<section id="portfolio" class="section">
+  <h2>Projects</h2>
+  <div class="portfolio-grid">
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300x180" alt="AgroHub">
+      <h3>AgroHub</h3>
+      <p>AI-powered farming app with crop diagnosis, marketplace, and soil analysis.</p>
+      <p><strong>Tech:</strong> HTML, CSS, JS, AI API</p>
+      <a href="#">GitHub</a> | <a href="#">Live Demo</a>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300x180" alt="IoT Bin">
+      <h3>Smart Waste Station</h3>
+      <p>Arduino-based dual sensor bin for smart waste management.</p>
+      <p><strong>Tech:</strong> Arduino, Ultrasonic, Bluetooth</p>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</section>
 
-  <script>
-  document.addEventListener('scroll',()=>{
-    document.querySelectorAll('.scroll-fade').forEach(el=>{
-      if(el.getBoundingClientRect().top < window.innerHeight - 100){
-        el.classList.add('visible');
-      }
-    });
+<!-- Achievements Section -->
+<section id="achievements" class="section">
+  <h2>Certificates</h2>
+  <div class="certificates-grid">
+    <div class="certificate-img">
+      <img src="https://via.placeholder.com/200x150" alt="Certificate">
+      <div class="cert-hover">View Certificate<br>100% – Fractal Analytics</div>
+    </div>
+    <div class="certificate-img">
+      <img src="https://via.placeholder.com/200x150" alt="Certificate">
+      <div class="cert-hover">View Certificate<br>94.16% – Alberta</div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" rows="4"></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <div class="social-links">
+    <a href="#">GitHub</a> | <a href="#">LinkedIn</a> | <a href="#">Instagram</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Rishvin Reddy • <a href="#">Privacy</a></p>
+</footer>
+
+<!-- Scroll Progress -->
+<div id="progress-bar"></div>
+
+<script>
+  // Hamburger menu
+  document.querySelector('.hamburger').onclick = () => {
+    document.querySelector('.nav-menu').classList.toggle('active');
+  };
+
+  // Loader animation
+  window.addEventListener('load', () => {
+    document.getElementById('loader').style.display = 'none';
   });
-  </script>
+
+  // Scroll progress bar
+  window.onscroll = () => {
+    let winScroll = document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById("progress-bar").style.width = scrolled + "%";
+  };
+</script>
+
 </body>
 </html>
